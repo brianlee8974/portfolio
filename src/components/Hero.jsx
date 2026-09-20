@@ -41,7 +41,7 @@ export default function Hero() {
             <span className="syntax-purple">const</span> developer = {'{'}
             <br />
             <span className="code-indent">
-              name: <span className="syntax-green">'Alex Morgan'</span>,
+              name: <span className="syntax-green">'Taehyun Lee'</span>,
             </span>
             <br />
             <span className="code-indent">
