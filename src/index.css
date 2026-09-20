@@ -138,6 +138,7 @@ h2 {
   font-family: 'Manrope', sans-serif;
 }
 h1 {
+  color: #111111;
   font-size: clamp(56px, 5.5vw, 76px);
   line-height: 1.1;
   font-weight: 750;
@@ -323,20 +324,21 @@ h1 {
   margin-bottom: 33px;
 }
 .eyebrow {
-  color: #737373;
+  color: #505050;
   font-size: 11px;
   letter-spacing: 1.7px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 16px;
 }
 .eyebrow span {
-  color: #9f9f9f;
+  color: #707070;
   margin-right: 9px;
 }
 h2 {
+  color: #111111;
   font-size: 37px;
   line-height: 1.25;
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: -1.6px;
   margin-bottom: 0;
 }
@@ -411,13 +413,14 @@ h2 {
   margin-bottom: 12px;
 }
 .project-title {
+  color: #111111;
   border: 0;
   background: none;
   display: flex;
   align-items: center;
   gap: 13px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 650;
   padding: 0;
   letter-spacing: -0.5px;
 }
@@ -893,8 +896,9 @@ h2 {
   color: #878787;
 }
 .skill-row h3 {
+  color: #111111;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 650;
   margin-bottom: 6px;
 }
 .skill-row p {
@@ -1504,7 +1508,6 @@ h2 {
 .project-info p {
   color: #646464;
 }
-.eyebrow,
 .skill-tags,
 .site-footer p,
 .site-footer > a:last-child {
@@ -1514,10 +1517,13 @@ h2 {
   background: #111;
   color: #fff;
 }
+.contact-panel h2,
 .contact-panel h2 .serif {
   color: #fff;
 }
-.contact-panel .eyebrow,
+.contact-panel .eyebrow {
+  color: #dedede;
+}
 .contact-panel > p:not(.eyebrow),
 .contact-email {
   color: #bdbdbd;
