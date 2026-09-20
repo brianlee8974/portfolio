@@ -26,7 +26,7 @@ export default function About() {
     <section id="about" className="about-section page-width">
       <div>
         <p className="eyebrow">
-          <span>02 /</span> A LITTLE ABOUT ME
+          <span>02 /</span> ABOUT ME
         </p>
         <h2>
           Curious by nature.
@@ -34,7 +34,7 @@ export default function About() {
           <span className="serif">Builder</span> by choice.
         </h2>
         <p className="about-copy">
-          I’m Alex, a developer who cares as much about how things feel as how they
+          I’m Taehyun—you can call me Brian—a developer who cares as much about how things feel as how they
           work. I enjoy finding the sweet spot between thoughtful design and clean,
           reliable code.
         </p>

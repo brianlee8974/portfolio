@@ -1,10 +1,10 @@
 // Edit your personal details and project content here.
 export const profile = {
-  name: 'Alex Morgan',
-  initials: 'am',
+  name: 'Taehyun Lee',
+  initials: 'TL',
   role: 'Creative developer',
-  email: 'hello@example.com',
-  location: 'Toronto, Canada',
+  email: 'brianlee8974@gmail.com',
+  location: 'London, Ontario',
 }
 
 export const projects = [
