@@ -4,21 +4,6 @@
 @theme {
   --font-sans: 'DM Sans', sans-serif;
   --color-accent: #111111;
-  --color-strong: #222222;
-  --color-code: #444444;
-  --color-secondary: #646464;
-  --color-caption: #707070;
-  --color-muted: #737373;
-  --color-subtle: #8d8d8d;
-  --color-icon: #969696;
-  --color-divider: #e6e6e6;
-  --color-surface: #f4f4f4;
-  --text-label: 15px;
-  --font-weight-demibold: 650;
-  --leading-comfortable: 1.7;
-  --leading-spacious: 1.8;
-  --leading-airy: 1.9;
-  --radius-subtle: 3px;
 }
 :root {
   font-family: 'DM Sans', sans-serif;

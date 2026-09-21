@@ -8,7 +8,7 @@ export default function Footer() {
         {profile.initials}
         <span>.</span>
       </a>
-      <p className="m-0 text-xs/normal text-caption">
+      <p className="m-0 text-[12px] text-[#707070]">
         © {new Date().getFullYear()} {profile.name} <span className="px-2.5">·</span>{' '}
         Built with care & a little caffeine.
       </p>
