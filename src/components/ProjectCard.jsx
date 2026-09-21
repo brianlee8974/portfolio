@@ -19,11 +19,11 @@ export default function ProjectCard({ project, index, onSelect }) {
         <div>
           <button className="project-title" onClick={() => onSelect(project)}>
             {project.name}
-            <ArrowUpRight size={20} className="w-[17px] text-[#969696]" />
+            <ArrowUpRight size={20} className="w-4.25 text-icon" />
           </button>
-          <p className="mt-[5px] mb-0 text-[14px] text-[#646464]">{project.type}</p>
+          <p className="mt-1.25 mb-0 text-sm/normal text-secondary">{project.type}</p>
         </div>
-        <span className="pt-[7px] text-[12px] text-[#8d8d8d]">{project.year}</span>
+        <span className="pt-1.75 text-xs/normal text-subtle">{project.year}</span>
       </div>
       <div className="flex gap-2 flex-wrap">
         {project.tags.map((tag) => (

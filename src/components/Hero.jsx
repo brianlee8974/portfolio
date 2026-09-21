@@ -38,23 +38,23 @@ export default function Hero() {
             <small>about-me.js</small>
           </div>
           <code>
-            <span className="font-bold text-[#444]">const</span> developer = {'{'}
+            <span className="font-bold text-code">const</span> developer = {'{'}
             <br />
             <span className="pl-5">
-              name: <span className="text-[#444]">'Taehyun Lee'</span>,
+              name: <span className="text-code">'Taehyun Lee'</span>,
             </span>
             <br />
             <span className="pl-5">
-              focus: <span className="text-[#444]">'Frontend'</span>,
+              focus: <span className="text-code">'Frontend'</span>,
             </span>
             <br />
             <span className="pl-5">
-              loves: [<span className="text-[#444]">'Design'</span>,{' '}
-              <span className="text-[#444]">'Code'</span>],
+              loves: [<span className="text-code">'Design'</span>,{' '}
+              <span className="text-code">'Code'</span>],
             </span>
             <br />
             <span className="pl-5">
-              coffee: <span className="text-[#444]">true</span>
+              coffee: <span className="text-code">true</span>
             </span>
             <br />
             {'}'}

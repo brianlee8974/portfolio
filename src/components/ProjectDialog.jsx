@@ -41,8 +41,8 @@ export default function ProjectDialog({ project, onClose }) {
           {project.url ? 'FEATURED PROJECT' : 'SAMPLE PROJECT'} · {project.year}
         </p>
         <h2 id="dialog-title">{project.name}</h2>
-        <p className="text-base leading-[1.8] text-[#737373]">{project.description}</p>
-        <p className="text-base leading-[1.8] text-[#737373]">{project.detail}</p>
+        <p className="text-base leading-spacious text-muted">{project.description}</p>
+        <p className="text-base leading-spacious text-muted">{project.detail}</p>
         <div className="flex flex-wrap gap-2 mt-6">
           {project.tags.map((tag) => (
             <span className="tag" key={tag}>
@@ -61,7 +61,7 @@ export default function ProjectDialog({ project, onClose }) {
             <ArrowUpRight size={18} />
           </a>
         ) : (
-          <p className="mt-[25px] mb-0 text-[12px] leading-[1.8] text-[#737373]">
+          <p className="mt-6.25 mb-0 text-xs leading-spacious text-muted">
             Portfolio concept — no external live demo or repository is attached yet.
           </p>
         )}
