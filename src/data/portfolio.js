@@ -9,19 +9,21 @@ export const profile = {
 
 export const projects = [
   {
-    id: 'orbit',
-    name: 'Orbit',
-    type: 'Finance dashboard',
+    id: 'deskcanvas',
+    name: 'DeskCanvas',
+    type: 'Windows desktop customization',
     year: '2026',
-    tags: ['React', 'Tailwind CSS', 'Recharts'],
+    tags: ['Windows', 'Desktop customization', 'Productivity'],
     description:
-      'A calmer way to understand your money. A personal finance concept ' +
-      'that brings balances, spending, and savings into one clear view.',
+      'A Windows app for making your desktop your own. Arrange customizable ' +
+      'panels, organize apps, and build a workspace around your daily workflow.',
     detail:
-      'Designed around a simple question: where is my money going? ' +
-      'This sample concept explores readable data, a clear visual hierarchy, ' +
-      'and a dashboard that feels approachable on any screen.',
-    color: 'lavender',
+      'Combine app launchers, shortcuts, clocks, and system information in ' +
+      'flexible panels. Personalize colors, spacing, and layouts, with ' +
+      'automatic saving and independent resets for individual sections.',
+    color: 'deskcanvas',
+    url: 'https://store.steampowered.com/app/4889250/DeskCanvas/',
+    linkLabel: 'View on Steam',
   },
   {
     id: 'forma',

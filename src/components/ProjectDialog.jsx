@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { X } from 'lucide-react'
+import { ArrowUpRight, X } from 'lucide-react'
 import ProjectPreview from './previews/ProjectPreview.jsx'
 
 export default function ProjectDialog({ project, onClose }) {
@@ -37,7 +37,9 @@ export default function ProjectDialog({ project, onClose }) {
         <ProjectPreview projectId={project.id} />
       </div>
       <div className="dialog-content">
-        <p className="eyebrow">SAMPLE PROJECT · {project.year}</p>
+        <p className="eyebrow">
+          {project.url ? 'FEATURED PROJECT' : 'SAMPLE PROJECT'} · {project.year}
+        </p>
         <h2 id="dialog-title">{project.name}</h2>
         <p>{project.description}</p>
         <p>{project.detail}</p>
@@ -48,9 +50,21 @@ export default function ProjectDialog({ project, onClose }) {
             </span>
           ))}
         </div>
-        <p className="sample-note">
-          Portfolio concept — no external live demo or repository is attached yet.
-        </p>
+        {project.url ? (
+          <a
+            className="button-primary project-external-link"
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {project.linkLabel}
+            <ArrowUpRight size={18} />
+          </a>
+        ) : (
+          <p className="sample-note">
+            Portfolio concept — no external live demo or repository is attached yet.
+          </p>
+        )}
       </div>
     </dialog>
   )

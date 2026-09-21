@@ -27,7 +27,7 @@ npm run preview
 - `src/components/Contact.jsx`: contact section and email links.
 - `src/components/Header.jsx`: desktop navigation and mobile menu state.
 - `src/components/Footer.jsx`: copyright and back-to-top link.
-- `src/components/previews/`: decorative project mockups and their lookup component.
+- `src/components/previews/`: project imagery, sample mockups, and their lookup.
 - `src/data/portfolio.js`: editable profile and project content.
 - `src/index.css`: formatted theme, layouts, and responsive styles.
 - `public/favicon.svg`: personal monogram.
@@ -47,7 +47,10 @@ Prettier uses two-space indentation and an 88-character target line width.
 Run `format` after editing; `format:check` reports files needing formatting.
 Generated output, dependencies, and local publishing files are excluded.
 
-Alex Morgan and the projects are illustrative sample content. The contact address
-is `hello@example.com`; replace it before using this as a real portfolio. Project
-cards open concept descriptions, not external live demos. Project previews are
-HTML/CSS interface mockups. Fonts load from Google Fonts with local fallback fonts.
+DeskCanvas links to its real Steam listing. Forma and Folio are sample concepts.
+Project cards open details; projects with a `url` also show an external link.
+Fonts load from Google Fonts with local fallback fonts.
+
+DeskCanvas artwork in `public/images/deskcanvas-header.jpg` comes from its
+[official Steam listing](https://store.steampowered.com/app/4889250/DeskCanvas/).
+The product description and feature summary are based on the same listing.

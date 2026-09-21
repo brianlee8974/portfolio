@@ -1,9 +1,9 @@
-import OrbitPreview from './OrbitPreview.jsx'
+import DeskCanvasPreview from './DeskCanvasPreview.jsx'
 import FormaPreview from './FormaPreview.jsx'
 import FolioPreview from './FolioPreview.jsx'
 
 const previews = {
-  orbit: OrbitPreview,
+  deskcanvas: DeskCanvasPreview,
   forma: FormaPreview,
   folio: FolioPreview,
 }

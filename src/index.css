@@ -371,9 +371,6 @@ h2 {
 .project-featured .project-visual {
   height: 415px;
 }
-.lavender {
-  background: #f3f3f3;
-}
 .peach {
   background: #f5f5f5;
 }
@@ -445,171 +442,6 @@ h2 {
   background: #eeeeee;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
-}
-.orbit-window {
-  width: 690px;
-  height: 326px;
-  display: flex;
-  background: #fcfcfc;
-  border: 1px solid #fff;
-  border-radius: 9px;
-  box-shadow: 0 18px 35px #49494915;
-  transform: none;
-  transition: transform 0.4s;
-  pointer-events: none;
-}
-.project-visual:hover .orbit-window {
-  transform: none;
-}
-.mock-sidebar {
-  width: 145px;
-  padding: 22px 14px;
-  border-right: 1px solid #ededed;
-  position: relative;
-}
-.mock-logo {
-  display: flex;
-  gap: 8px;
-  color: #686868;
-  align-items: center;
-  margin-bottom: 26px;
-  font-size: 21px;
-  letter-spacing: -0.7px;
-}
-.mock-nav {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 9px;
-  padding: 10px 9px;
-  color: #898989;
-  margin-bottom: 3px;
-}
-.mock-nav.active {
-  background: #ededed;
-  color: #686868;
-  border-radius: 4px;
-}
-.mock-account {
-  position: absolute;
-  bottom: 17px;
-  font-size: 9px;
-  color: #7e7e7e;
-}
-.mock-account span {
-  padding-left: 9px;
-}
-.mock-main {
-  flex: 1;
-  padding: 19px 25px;
-}
-.mock-overline {
-  font-size: 7px;
-  letter-spacing: 1px;
-  color: #a0a0a0;
-}
-.mock-avatar {
-  display: grid;
-  place-items: center;
-  background: #e9e9e9;
-  color: #797979;
-  border-radius: 50%;
-  width: 21px;
-  height: 21px;
-  font-size: 9px;
-}
-.mock-main h4 {
-  font-size: 17px;
-  letter-spacing: -0.6px;
-  margin: 6px 0 3px;
-  font-weight: 600;
-}
-.mock-main h4 span {
-  font-size: 15px;
-  color: #bcbcbc;
-}
-.mock-main > p {
-  font-size: 8px;
-  color: #9b9b9b;
-  margin-bottom: 14px;
-}
-.mock-stats {
-  display: flex;
-  gap: 12px;
-}
-.mock-stats > div {
-  flex: 1;
-  padding: 12px 14px;
-  border: 1px solid #ececec;
-  border-radius: 5px;
-  background: white;
-}
-.mock-stats small {
-  display: block;
-  font-size: 8px;
-  color: #888888;
-}
-.mock-stats strong {
-  display: block;
-  font-size: 22px;
-  margin: 3px 0;
-  font-weight: 600;
-  letter-spacing: -0.6px;
-}
-.mock-stats strong span {
-  color: #aeaeae;
-  font-size: 15px;
-}
-.mock-stats em {
-  display: block;
-  font-style: normal;
-  font-size: 7px;
-  color: #989898;
-}
-.chart-title {
-  display: flex;
-  justify-content: space-between;
-  font-size: 9px;
-  margin-top: 17px;
-}
-.chart-title span {
-  font-size: 7px;
-  color: #888888;
-}
-.bar-chart {
-  display: flex;
-  justify-content: space-around;
-  height: 79px;
-  padding: 8px 10px 0;
-  background: repeating-linear-gradient(
-    to top,
-    #ececec 0,
-    #ececec 1px,
-    transparent 1px,
-    transparent 23px
-  );
-}
-.bar-chart > div {
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  width: 20px;
-}
-.bar-chart i {
-  display: block;
-  width: 8px;
-  background: #444444;
-  border-radius: 2px 2px 0 0;
-}
-.bar-chart i + i {
-  background: #bdbdbd;
-}
-.chart-labels {
-  display: flex;
-  justify-content: space-around;
-  font-size: 6px;
-  color: #a5a5a5;
-  padding-top: 7px;
 }
 .forma-window {
   width: 460px;
@@ -1002,9 +834,6 @@ h2 {
   border-radius: 0;
   height: 360px;
 }
-.project-dialog .orbit-window {
-  transform: scale(0.9);
-}
 .dialog-close {
   position: absolute;
   right: 13px;
@@ -1172,13 +1001,6 @@ h2 {
   .project-featured .project-visual {
     height: 315px;
   }
-  .orbit-window {
-    min-width: 590px;
-    transform: scale(0.8) rotate(0deg);
-  }
-  .project-visual:hover .orbit-window {
-    transform: scale(0.8) rotate(0deg);
-  }
   .project-grid {
     gap: 32px 20px;
   }
@@ -1246,9 +1068,6 @@ h2 {
   }
   .project-dialog .project-visual {
     height: 290px;
-  }
-  .project-dialog .orbit-window {
-    transform: scale(0.7);
   }
 }
 @media (max-width: 440px) {
@@ -1329,12 +1148,6 @@ h2 {
   .project-featured .project-visual {
     height: 250px;
   }
-  .orbit-window {
-    transform: scale(0.55) rotate(0deg);
-  }
-  .project-visual:hover .orbit-window {
-    transform: scale(0.55) rotate(0deg);
-  }
   .project-visual {
     height: 250px;
   }
@@ -1369,9 +1182,6 @@ h2 {
     right: 12px;
     top: 40px;
     font-size: 70px;
-  }
-  .project-dialog .orbit-window {
-    transform: scale(0.5);
   }
   .project-dialog .project-visual {
     height: 245px;
@@ -1409,7 +1219,6 @@ h2 {
   letter-spacing: -0.035em;
   word-spacing: 0.06em;
 }
-.project-visual > .orbit-window,
 .project-visual > .forma-window,
 .project-visual > .folio-window {
   flex-shrink: 0;
@@ -1541,4 +1350,27 @@ h2 {
 }
 .project-dialog::backdrop {
   background: #0009;
+}
+
+/* Official DeskCanvas artwork replaces the original sample dashboard. */
+.deskcanvas {
+  background: #f3f3f3;
+}
+
+.deskcanvas-preview {
+  width: calc(100% - 64px);
+  max-width: 740px;
+  height: calc(100% - 64px);
+  object-fit: contain;
+}
+
+.project-external-link {
+  margin-top: 24px;
+}
+
+@media (max-width: 440px) {
+  .deskcanvas-preview {
+    width: calc(100% - 32px);
+    height: calc(100% - 48px);
+  }
 }
