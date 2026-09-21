@@ -15,15 +15,15 @@ export default function ProjectCard({ project, index, onSelect }) {
           <ArrowUpRight size={23} />
         </span>
       </button>
-      <div className="project-info">
+      <div className="mt-5 mb-3 flex justify-between">
         <div>
           <button className="project-title" onClick={() => onSelect(project)}>
             {project.name}
-            <ArrowUpRight size={20} />
+            <ArrowUpRight size={20} className="w-[17px] text-[#969696]" />
           </button>
-          <p>{project.type}</p>
+          <p className="mt-[5px] mb-0 text-[14px] text-[#646464]">{project.type}</p>
         </div>
-        <span className="project-year">{project.year}</span>
+        <span className="pt-[7px] text-[12px] text-[#8d8d8d]">{project.year}</span>
       </div>
       <div className="flex gap-2 flex-wrap">
         {project.tags.map((tag) => (

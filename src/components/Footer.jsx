@@ -8,11 +8,11 @@ export default function Footer() {
         {profile.initials}
         <span>.</span>
       </a>
-      <p>
-        © {new Date().getFullYear()} {profile.name} <span>·</span> Built with care & a
-        little caffeine.
+      <p className="m-0 text-[12px] text-[#707070]">
+        © {new Date().getFullYear()} {profile.name} <span className="px-2.5">·</span>{' '}
+        Built with care & a little caffeine.
       </p>
-      <a href="#main">
+      <a href="#main" className="flex items-center gap-2">
         Back to top <ArrowUpRight size={15} />
       </a>
     </footer>

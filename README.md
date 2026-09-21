@@ -36,6 +36,9 @@ npm run preview
 The `.jsx` files contain JavaScript with React's JSX syntax; no TypeScript is used.
 Menu state stays in `Header`, and project-dialog state stays in `Projects`.
 
+Simple spacing, colors, and typography use Tailwind utilities in each component.
+Shared styles, project artwork, and complex responsive layouts stay in `index.css`.
+
 ## Formatting
 
 ```sh
