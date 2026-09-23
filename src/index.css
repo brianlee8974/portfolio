@@ -1213,7 +1213,11 @@ button.project-visual,
 
 /* Official DeskCanvas artwork replaces the original sample dashboard. */
 .deskcanvas {
-  background: #111015;
+  background:
+    radial-gradient(ellipse at top right, #a76b3c26, transparent 45%),
+    radial-gradient(ellipse at bottom left, #a76b3c26, transparent 45%),
+    radial-gradient(ellipse at top left, #a76b3c12, transparent 40%),
+    radial-gradient(ellipse at bottom right, #a76b3c12, transparent 40%), #111015;
   border-color: #111015;
 }
 
@@ -1224,13 +1228,19 @@ button.project-visual,
 .deskcanvas-preview {
   width: calc(100% - 64px);
   max-width: 740px;
-  height: calc(100% - 64px);
+  height: auto;
+  max-height: calc(100% - 64px);
   object-fit: contain;
+  /* Soften the artwork's edges into the surrounding corner glow. */
+  mask-image:
+    linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
+    linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+  mask-composite: intersect;
 }
 
 @media (max-width: 440px) {
   .deskcanvas-preview {
     width: calc(100% - 32px);
-    height: calc(100% - 48px);
+    max-height: calc(100% - 48px);
   }
 }
