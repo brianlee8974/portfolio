@@ -166,13 +166,9 @@ h1 {
   border-radius: 7px;
   font-size: 14px;
   font-weight: 500;
-  transition:
-    background 0.2s,
-    transform 0.2s;
 }
 .button-primary:hover {
   background: #333333;
-  transform: translateY(-2px);
 }
 .text-link {
   display: inline-flex;
@@ -349,13 +345,6 @@ h2 {
   border: 1px solid #ffffffa0;
   background: #ffffff70;
   border-radius: 50%;
-  transition:
-    transform 0.2s,
-    background 0.2s;
-}
-.project-visual:hover .project-open {
-  transform: rotate(0deg);
-  background: white;
 }
 .project-title {
   color: #111111;
@@ -1091,9 +1080,6 @@ h2 {
   border-radius: 3px;
   background: #fff;
 }
-.project-visual:hover .project-open {
-  transform: translate(2px, -2px);
-}
 .tag {
   background: transparent;
   color: #616161;
@@ -1134,6 +1120,95 @@ h2 {
 }
 .project-dialog::backdrop {
   background: #0009;
+}
+
+/* Button feedback uses separate transforms so entrance animations still work. */
+.button-primary,
+.header-cta,
+.project-open,
+button.project-visual,
+.menu-toggle,
+.dialog-close {
+  transition:
+    translate 220ms ease,
+    scale 220ms ease,
+    background-color 220ms ease,
+    color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.button-primary svg,
+.header-cta svg,
+.text-link svg,
+.project-title svg {
+  transition:
+    translate 220ms ease,
+    color 220ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button-primary:hover,
+  .header-cta:hover {
+    box-shadow: 0 8px 18px #00000026;
+  }
+
+  .header-cta:hover,
+  button.project-visual:hover .project-open {
+    background: #111;
+    border-color: #111;
+    color: #fff;
+  }
+
+  button.project-visual:hover {
+    border-color: #b5b5b5;
+    box-shadow: 0 8px 20px #00000014;
+  }
+
+  .menu-toggle:hover,
+  .dialog-close:hover {
+    background: #e6e6e6;
+    border-color: #111;
+  }
+
+  .project-title:hover svg {
+    color: #111;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .button-primary:hover,
+  .header-cta:hover {
+    translate: 0 -4px;
+    scale: 1.025;
+  }
+
+  .button-primary:hover svg,
+  .header-cta:hover svg,
+  .text-link:hover svg,
+  .project-title:hover svg {
+    translate: 3px -3px;
+  }
+
+  .hero-actions .button-primary:hover svg {
+    translate: 0 4px;
+  }
+
+  button.project-visual:hover .project-open {
+    translate: 3px -3px;
+    scale: 1.1;
+  }
+
+  .menu-toggle:hover,
+  .dialog-close:hover {
+    scale: 1.1;
+  }
+
+  .button-primary:active,
+  .header-cta:active {
+    translate: 0 0;
+    scale: 0.98;
+  }
 }
 
 /* Official DeskCanvas artwork replaces the original sample dashboard. */
