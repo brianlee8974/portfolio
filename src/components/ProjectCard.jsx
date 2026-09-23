@@ -1,9 +1,14 @@
 import { ArrowUpRight } from 'lucide-react'
 import ProjectPreview from './previews/ProjectPreview.jsx'
+import SlideIn from './SlideIn.jsx'
 
 export default function ProjectCard({ project, index, onSelect }) {
   return (
-    <article className={`project-card ${index === 0 ? 'project-featured' : ''}`}>
+    <SlideIn
+      as="article"
+      className={`project-card ${index === 0 ? 'project-featured' : ''}`}
+      delay={index * 90}
+    >
       <button
         onClick={() => onSelect(project)}
         className={`project-visual ${project.color}`}
@@ -32,6 +37,6 @@ export default function ProjectCard({ project, index, onSelect }) {
           </span>
         ))}
       </div>
-    </article>
+    </SlideIn>
   )
 }

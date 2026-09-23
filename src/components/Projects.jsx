@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { projects } from '../data/portfolio.js'
 import ProjectCard from './ProjectCard.jsx'
 import ProjectDialog from './ProjectDialog.jsx'
+import SlideIn from './SlideIn.jsx'
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null)
@@ -9,7 +10,7 @@ export default function Projects() {
   return (
     <>
       <section id="work" className="work-section page-width">
-        <div className="section-heading">
+        <SlideIn className="section-heading">
           <div>
             <p className="eyebrow">
               <span>01 /</span> SELECTED WORK
@@ -23,7 +24,7 @@ export default function Projects() {
             <br />
             and a lot of attention to detail.
           </p>
-        </div>
+        </SlideIn>
 
         <div className="project-grid">
           {projects.map((project, index) => (

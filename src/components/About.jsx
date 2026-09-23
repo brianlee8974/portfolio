@@ -1,4 +1,5 @@
 import { Code2, Layers, Sparkles } from 'lucide-react'
+import SlideIn from './SlideIn.jsx'
 
 const skillGroups = [
   {
@@ -25,31 +26,42 @@ export default function About() {
   return (
     <section id="about" className="about-section page-width">
       <div>
-        <p className="eyebrow">
+        <SlideIn as="p" className="eyebrow">
           <span>02 /</span> ABOUT ME
-        </p>
-        <h2>
+        </SlideIn>
+        <SlideIn as="h2" delay={70}>
           Curious by nature.
           <br />
           <span className="serif">Builder</span> by choice.
-        </h2>
-        <p className="mb-[15px] text-base leading-[1.9] text-[#646464]">
+        </SlideIn>
+        <SlideIn
+          as="p"
+          className="mb-[15px] text-base leading-[1.9] text-[#646464]"
+          delay={140}
+        >
           I’m Taehyun—you can call me Brian—a developer who cares as much about how
           things feel as how they work. I enjoy finding the sweet spot between
           thoughtful design and clean, reliable code.
-        </p>
-        <p className="mb-[15px] text-base leading-[1.9] text-[#646464]">
+        </SlideIn>
+        <SlideIn
+          as="p"
+          className="mb-[15px] text-base leading-[1.9] text-[#646464]"
+          delay={210}
+        >
           When I’m away from the keyboard, you’ll find me exploring new places,
           collecting too many bookmarks, or chasing the perfect cup of coffee.
-        </p>
+        </SlideIn>
       </div>
       <div className="skills-panel pt-[3px]">
-        <p className="eyebrow">WHAT I BRING TO THE TABLE</p>
-        {skillGroups.map(({ icon: Icon, title, text, skills }) => (
-          <div
+        <SlideIn as="p" className="eyebrow">
+          WHAT I BRING TO THE TABLE
+        </SlideIn>
+        {skillGroups.map(({ icon: Icon, title, text, skills }, index) => (
+          <SlideIn
             className="flex gap-[18px] border-b border-b-[#e6e6e6] py-5
               last:border-b-0"
             key={title}
+            delay={index * 80}
           >
             <span
               className="grid h-[43px] min-w-[43px] place-items-center
@@ -71,7 +83,7 @@ export default function About() {
                 ))}
               </div>
             </div>
-          </div>
+          </SlideIn>
         ))}
       </div>
     </section>

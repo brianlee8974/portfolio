@@ -1,34 +1,37 @@
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { profile } from '../data/portfolio.js'
+import SlideIn from './SlideIn.jsx'
 
 export default function Hero() {
   return (
     <section className="hero page-width">
       <div className="hero-main">
-        <div className="availability">
+        <SlideIn className="availability">
           <span /> Available for new opportunities
-        </div>
-        <p className="hero-intro">Hey, I’m {profile.name}</p>
-        <h1>
+        </SlideIn>
+        <SlideIn as="p" className="hero-intro" delay={60}>
+          Hey, I’m {profile.name}
+        </SlideIn>
+        <SlideIn as="h1" delay={120}>
           I build things
           <br />
           for the <span className="hero-serif">web.</span>
-        </h1>
-        <p className="hero-description">
+        </SlideIn>
+        <SlideIn as="p" className="hero-description" delay={200}>
           A creative developer turning thoughtful design into
           <br className="desktop-break" /> memorable digital experiences. Based in{' '}
           {profile.location}.
-        </p>
-        <div className="hero-actions">
+        </SlideIn>
+        <SlideIn className="hero-actions" delay={280}>
           <a href="#work" className="button-primary">
             Explore my work <ArrowDown size={17} />
           </a>
           <a href="#about" className="text-link">
             A little about me <ArrowUpRight size={16} />
           </a>
-        </div>
+        </SlideIn>
       </div>
-      <div className="hero-side">
+      <SlideIn className="hero-side" delay={180}>
         <span className="side-index">&lt; hello, world /&gt;</span>
         <div className="code-card">
           <div className="code-top">
@@ -69,7 +72,7 @@ export default function Hero() {
             </span>
           </div>
         </div>
-      </div>
+      </SlideIn>
       <div className="hero-footer">
         <span>GOOD DESIGN. CLEAN CODE. REAL IMPACT.</span>
         <a href="#work">

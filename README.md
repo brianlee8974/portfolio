@@ -27,6 +27,7 @@ npm run preview
 - `src/components/Contact.jsx`: contact section and email links.
 - `src/components/Header.jsx`: desktop navigation and mobile menu state.
 - `src/components/Footer.jsx`: copyright and back-to-top link.
+- `src/components/SlideIn.jsx` and `SlideIn.css`: reusable scroll animations.
 - `src/components/previews/`: project imagery, sample mockups, and their lookup.
 - `src/data/portfolio.js`: editable profile and project content.
 - `src/index.css`: formatted theme, layouts, and responsive styles.
@@ -38,6 +39,11 @@ Menu state stays in `Header`, and project-dialog state stays in `Projects`.
 
 Simple spacing, colors, and typography use Tailwind utilities in each component.
 Shared styles, project artwork, and complex responsive layouts stay in `index.css`.
+
+Use `SlideIn` in place of an element to reveal it once as it enters the viewport.
+Set `as` for its HTML tag and `delay` in milliseconds to stagger nearby content.
+Animation distance and duration live in `SlideIn.css`; reduced-motion preferences
+and keyboard focus skip the animation automatically.
 
 ## Formatting
 
