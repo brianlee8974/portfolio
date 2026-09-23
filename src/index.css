@@ -1213,7 +1213,12 @@ button.project-visual,
 
 /* Official DeskCanvas artwork replaces the original sample dashboard. */
 .deskcanvas {
-  background: #f3f3f3;
+  background: #111015;
+  border-color: #111015;
+}
+
+.deskcanvas .project-number {
+  color: #b5b1bd;
 }
 
 .deskcanvas-preview {
