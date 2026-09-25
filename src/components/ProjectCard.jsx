@@ -24,7 +24,6 @@ export default function ProjectCard({ project, index, onSelect }) {
         <div>
           <button className="project-title" onClick={() => onSelect(project)}>
             {project.name}
-            <ArrowUpRight size={20} className="w-[17px] text-[#969696]" />
           </button>
           <p className="mt-[5px] mb-0 text-[14px] text-[#646464]">{project.type}</p>
         </div>

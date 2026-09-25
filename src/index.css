@@ -1140,8 +1140,7 @@ button.project-visual,
 
 .button-primary svg,
 .header-cta svg,
-.text-link svg,
-.project-title svg {
+.text-link svg {
   transition:
     translate 220ms ease,
     color 220ms ease;
@@ -1171,9 +1170,6 @@ button.project-visual,
     border-color: #111;
   }
 
-  .project-title:hover svg {
-    color: #111;
-  }
 }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
@@ -1193,8 +1189,7 @@ button.project-visual,
 
   .button-primary:hover svg,
   .header-cta:hover svg,
-  .text-link:hover svg,
-  .project-title:hover svg {
+  .text-link:hover svg {
     translate: 3px -3px;
   }
 

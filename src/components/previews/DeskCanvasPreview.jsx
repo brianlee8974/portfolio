@@ -2,10 +2,10 @@ export default function DeskCanvasPreview() {
   return (
     <img
       className="deskcanvas-preview"
-      src="/images/deskcanvas-header.jpg"
+      src="/images/deskcanvas-header.png"
       alt="DeskCanvas — Windows desktop customization app"
-      width="460"
-      height="215"
+      width="920"
+      height="430"
       loading="lazy"
       decoding="async"
     />
