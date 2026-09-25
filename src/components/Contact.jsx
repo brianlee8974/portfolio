@@ -25,9 +25,14 @@ export default function Contact() {
         >
           Let’s talk <ArrowUpRight size={18} />
         </SlideIn>
-        <a className="contact-email" href={`mailto:${profile.email}`}>
+        <SlideIn
+          as="a"
+          className="contact-email"
+          href={`mailto:${profile.email}`}
+          delay={320}
+        >
           {profile.email}
-        </a>
+        </SlideIn>
       </div>
     </section>
   )

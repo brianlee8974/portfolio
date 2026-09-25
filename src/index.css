@@ -644,6 +644,7 @@ h2 {
   margin-right: 22px;
 }
 .contact-email {
+  display: inline-block;
   font-size: 13px;
   color: #888888;
 }
@@ -1194,7 +1195,7 @@ button.project-visual,
   }
 
   .hero-actions .button-primary:hover svg {
-    translate: 0 4px;
+    translate: 0 3px;
   }
 
   button.project-visual:hover .project-open {
