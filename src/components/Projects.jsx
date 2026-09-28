@@ -19,11 +19,6 @@ export default function Projects() {
               A few things I’ve <span className="serif">made.</span>
             </h2>
           </div>
-          <p>
-            A mix of curiosity, creativity,
-            <br />
-            and a lot of attention to detail.
-          </p>
         </SlideIn>
 
         <div className="project-grid">

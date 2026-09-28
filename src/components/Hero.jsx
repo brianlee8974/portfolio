@@ -79,10 +79,6 @@ export default function Hero() {
         </div>
       </SlideIn>
       <div className="hero-footer">
-        <span>GOOD DESIGN. CLEAN CODE. REAL IMPACT.</span>
-        <a href="#work">
-          SCROLL TO EXPLORE <ArrowDown size={13} />
-        </a>
       </div>
     </section>
   )
