@@ -190,11 +190,6 @@ h1 {
     border-color 220ms ease,
     box-shadow 220ms ease;
 }
-.resume-link:hover {
-  background: #111111;
-  border-color: #111111;
-  color: #ffffff;
-}
 .hero-side {
   align-self: center;
   padding-top: 35px;
@@ -1175,7 +1170,6 @@ button.project-visual,
   }
 
   .header-cta:hover,
-  .resume-link:hover,
   button.project-visual:hover .project-open {
     background: #111;
     border-color: #111;
