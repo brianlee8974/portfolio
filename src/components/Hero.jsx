@@ -26,8 +26,13 @@ export default function Hero() {
           <a href="#work" className="button-primary">
             Explore my work <ArrowDown size={17} />
           </a>
-          <a href="#about" className="text-link">
-            A little about me <ArrowUpRight size={16} />
+          <a
+            href="/resume.pdf"
+            className="text-link resume-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View my resume <ArrowUpRight size={16} />
           </a>
         </SlideIn>
       </div>

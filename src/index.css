@@ -176,6 +176,25 @@ h1 {
   gap: 10px;
   font-size: 14px;
 }
+.resume-link {
+  gap: 24px;
+  padding: 14px 21px;
+  border: 1px solid #d6d6d6;
+  border-radius: 7px;
+  font-weight: 500;
+  transition:
+    translate 220ms ease,
+    scale 220ms ease,
+    background-color 220ms ease,
+    color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+.resume-link:hover {
+  background: #111111;
+  border-color: #111111;
+  color: #ffffff;
+}
 .hero-side {
   align-self: center;
   padding-top: 35px;
@@ -1126,6 +1145,7 @@ h2 {
 /* Button feedback uses separate transforms so entrance animations still work. */
 .button-primary,
 .header-cta,
+.resume-link,
 .project-open,
 button.project-visual,
 .menu-toggle,
@@ -1149,11 +1169,13 @@ button.project-visual,
 
 @media (hover: hover) and (pointer: fine) {
   .button-primary:hover,
-  .header-cta:hover {
+  .header-cta:hover,
+  .resume-link:hover {
     box-shadow: 0 8px 18px #00000026;
   }
 
   .header-cta:hover,
+  .resume-link:hover,
   button.project-visual:hover .project-open {
     background: #111;
     border-color: #111;
@@ -1183,7 +1205,8 @@ button.project-visual,
   }
 
   .button-primary:hover,
-  .header-cta:hover {
+  .header-cta:hover,
+  .resume-link:hover {
     translate: 0 -4px;
     scale: 1.025;
   }
