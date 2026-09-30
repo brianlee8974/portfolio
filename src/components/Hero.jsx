@@ -37,49 +37,13 @@ export default function Hero() {
         </SlideIn>
       </div>
       <SlideIn className="hero-side" delay={180}>
-        <span className="side-index">&lt; hello, world /&gt;</span>
-        <div className="code-card">
-          <div className="code-top">
-            <span />
-            <span />
-            <span />
-            <small>about-me.js</small>
-          </div>
-          <code>
-            <span className="font-bold text-[#444]">const</span> developer = {'{'}
-            <br />
-            <span className="pl-5">
-              name: <span className="text-[#444]">'Taehyun Lee'</span>,
-            </span>
-            <br />
-            <span className="pl-5">
-              focus: <span className="text-[#444]">'Frontend'</span>,
-            </span>
-            <br />
-            <span className="pl-5">
-              loves: [<span className="text-[#444]">'Design'</span>,{' '}
-              <span className="text-[#444]">'Code'</span>],
-            </span>
-            <br />
-            <span className="pl-5">
-              coffee: <span className="text-[#444]">true</span>
-            </span>
-            <br />
-            {'}'}
-            <br />
-            <br />
-            <span className="code-comment">// Always building something good.</span>
-          </code>
-          <div className="code-bottom">
-            <span>JavaScript</span>
-            <span>
-              UTF-8 <span className="ml-3">✦</span>
-            </span>
-          </div>
-        </div>
+        <div
+          className="headshot-frame"
+          role="img"
+          aria-label="Headshot of Taehyun Lee"
+          style={{ backgroundImage: "url('/images/headshot.jpg')" }}
+        />
       </SlideIn>
-      <div className="hero-footer">
-      </div>
     </section>
   )
 }

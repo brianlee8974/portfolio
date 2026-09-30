@@ -27,7 +27,7 @@ export default function About() {
     <section id="about" className="about-section page-width">
       <div>
         <SlideIn as="p" className="eyebrow">
-          <span>02 /</span> ABOUT ME
+          <span>/</span> ABOUT ME
         </SlideIn>
         <SlideIn as="h2" delay={70}>
           Curious by nature.

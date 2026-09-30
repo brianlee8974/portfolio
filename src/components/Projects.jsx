@@ -13,7 +13,7 @@ export default function Projects() {
         <SlideIn className="section-heading">
           <div>
             <p className="eyebrow">
-              <span>01 /</span> SELECTED WORK
+              <span>/</span> PROJECTS
             </p>
             <h2>
               A few things I’ve <span className="serif">made.</span>
