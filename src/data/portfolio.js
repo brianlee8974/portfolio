@@ -48,11 +48,11 @@ export const projects = [
   {
     id: 'towerdefence',
     name: 'Python Tower Defence',
-    type: 'Pygame tower defense game',
+    type: 'Tower defence game',
       year: '2025',
       tags: ['Python', 'Pygame'],
       description:
-        'A Python tower defense game built with Pygame, where players place ' +
+        'A Python tower defence game built with Pygame, where players place ' +
         'defensive towers to stop waves of enemies.',
     detail:
         'The game is organized across reusable Python modules for the game ' +
