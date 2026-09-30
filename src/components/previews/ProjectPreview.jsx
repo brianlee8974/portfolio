@@ -1,11 +1,11 @@
 import DeskCanvasPreview from './DeskCanvasPreview.jsx'
-import FolioPreview from './FolioPreview.jsx'
 import SkinCancerPreview from './SkinCancerPreview.jsx'
+import TowerDefencePreview from './TowerDefencePreview.jsx'
 
 const previews = {
   deskcanvas: DeskCanvasPreview,
   skincancer: SkinCancerPreview,
-  folio: FolioPreview,
+  towerdefence: TowerDefencePreview,
 }
 
 export default function ProjectPreview({ projectId }) {

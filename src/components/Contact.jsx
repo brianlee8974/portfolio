@@ -7,7 +7,7 @@ export default function Contact() {
     <section id="contact" className="contact-section page-width">
       <div className="contact-panel">
         <SlideIn as="p" className="eyebrow">
-          03 / WHAT’S NEXT?
+          / CONTACT
         </SlideIn>
         <SlideIn as="h2" delay={80}>
           Have something

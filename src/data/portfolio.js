@@ -13,7 +13,7 @@ export const projects = [
     name: 'DeskCanvas',
     type: 'Windows desktop customization',
     year: '2026',
-    tags: ['Windows', 'Desktop customization', 'Productivity'],
+    tags: ['C#', 'Available on Steam'],
     description:
       'A Windows app for making your desktop your own. Arrange customizable ' +
       'panels, organize apps, and build a workspace around your daily workflow.',
@@ -24,13 +24,14 @@ export const projects = [
     color: 'deskcanvas',
     url: 'https://store.steampowered.com/app/4889250/DeskCanvas/',
     linkLabel: 'View on Steam',
+     platform: 'steam',
   },
   {
     id: 'skincancer',
     name: 'WCS Skin Cancer Diagnostics AI',
     type: 'Machine learning healthcare app',
     year: '2026',
-    tags: ['Next.js', 'FastAPI', 'PyTorch'],
+    tags: ['Python', 'PyTorch', 'Next.js', 'FastAPI',],
     description:
       'An AI-assisted screening tool that classifies skin lesion images ' +
       'and returns confidence scores and recommendations.',
@@ -45,18 +46,19 @@ export const projects = [
     repositoryLabel: 'GitHub',
   },
   {
-    id: 'folio',
-    name: 'Folio',
-    type: 'Developer portfolio',
-    year: '2025',
-    tags: ['Vite', 'React', 'Tailwind CSS'],
-    description:
-      'A little personality, a lot of intention. A responsive home for ' +
-      'the things you make and the story behind them.',
+    id: 'towerdefence',
+    name: 'Python Tower Defence',
+    type: 'Pygame tower defense game',
+      year: '2025',
+      tags: ['Python', 'Pygame'],
+      description:
+        'A Python tower defense game built with Pygame, where players place ' +
+        'defensive towers to stop waves of enemies.',
     detail:
-      'The portfolio you are exploring is the working implementation of ' +
-      'this concept. It includes responsive navigation, accessible project ' +
-      'dialogs, reusable components, and a content-first layout.',
-    color: 'mint',
+        'The game is organized across reusable Python modules for the game ' +
+        'loop, enemies, settings, and menus. Run it locally after installing Pygame.',
+      color: 'tower',
+      repositoryUrl: 'https://github.com/brianlee8974/Python-TowerDefence',
+      repositoryLabel: 'GitHub',
   },
 ]

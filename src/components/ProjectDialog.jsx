@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { ArrowUpRight, X } from 'lucide-react'
+import { ArrowUpRight, Github, X } from 'lucide-react'
 import ProjectPreview from './previews/ProjectPreview.jsx'
 
 export default function ProjectDialog({ project, onClose }) {
@@ -59,6 +59,13 @@ export default function ProjectDialog({ project, onClose }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                {project.platform === 'steam' && (
+                  <img
+                    className="platform-icon"
+                    src="/images/steam-logo.png"
+                    alt=""
+                  />
+                )}
                 {project.linkLabel}
                 <ArrowUpRight size={18} />
               </a>
@@ -70,6 +77,7 @@ export default function ProjectDialog({ project, onClose }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <Github className="repository-icon" size={18} />
                 {project.repositoryLabel || 'Repository'}
                 <ArrowUpRight size={18} />
               </a>

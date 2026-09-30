@@ -1,24 +1,21 @@
-import { Code2, Layers, Sparkles } from 'lucide-react'
+import { Code2, Layers, Wrench} from 'lucide-react'
 import SlideIn from './SlideIn.jsx'
 
 const skillGroups = [
   {
     icon: Code2,
-    title: 'Frontend development',
-    text: 'Responsive, accessible experiences built for real people.',
-    skills: ['JavaScript', 'React', 'HTML & CSS'],
+    title: 'Languages',
+    skills: ['Python', 'Java', 'C#', 'C', 'JavaScript', 'Typescript', 'HTML/CSS', 'R'],
   },
   {
     icon: Layers,
-    title: 'Thoughtful interfaces',
-    text: 'The details that make a good experience feel effortless.',
-    skills: ['Tailwind CSS', 'Figma', 'Responsive design'],
+    title: 'Libraries & Frameworks',
+    skills: ['PyTorch', 'Numpy', 'React', 'Next.js', 'FastAPI', 'Tailwind CSS', 'Pygame',]
   },
   {
-    icon: Sparkles,
-    title: 'A builder’s mindset',
-    text: 'From first idea to the final polish. Always learning.',
-    skills: ['Vite', 'Git', 'Creative problem-solving'],
+    icon: Wrench,
+    title: 'Tools',
+    skills: ['Git', 'GitHub', 'VS Code', 'Jupyter Notebook', 'Unix', 'Vite',],
   },
 ]
 
@@ -54,11 +51,11 @@ export default function About() {
       </div>
       <div className="skills-panel pt-[3px]">
         <SlideIn as="p" className="eyebrow">
-          WHAT I BRING TO THE TABLE
+          TECH STACKS
         </SlideIn>
         {skillGroups.map(({ icon: Icon, title, text, skills }, index) => (
           <SlideIn
-            className="flex gap-[18px] border-b border-b-[#e6e6e6] py-5
+            className="flex gap-[18px] border-b border-b-[#e6e6e6] py-7
               last:border-b-0"
             key={title}
             delay={index * 80}
