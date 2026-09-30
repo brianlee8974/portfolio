@@ -50,16 +50,31 @@ export default function ProjectDialog({ project, onClose }) {
             </span>
           ))}
         </div>
-        {project.url ? (
-          <a
-            className="button-primary mt-6"
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {project.linkLabel}
-            <ArrowUpRight size={18} />
-          </a>
+        {project.url || project.repositoryUrl ? (
+          <div className="project-links">
+            {project.url && (
+              <a
+                className="button-primary"
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.linkLabel}
+                <ArrowUpRight size={18} />
+              </a>
+            )}
+            {project.repositoryUrl && (
+              <a
+                className="project-link-secondary"
+                href={project.repositoryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.repositoryLabel || 'Repository'}
+                <ArrowUpRight size={18} />
+              </a>
+            )}
+          </div>
         ) : (
           <p className="mt-[25px] mb-0 text-[12px] leading-[1.8] text-[#737373]">
             Portfolio concept — no external live demo or repository is attached yet.

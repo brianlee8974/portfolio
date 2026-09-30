@@ -26,19 +26,23 @@ export const projects = [
     linkLabel: 'View on Steam',
   },
   {
-    id: 'forma',
-    name: 'Forma',
-    type: 'Project management app',
+    id: 'skincancer',
+    name: 'WCS Skin Cancer Diagnostics AI',
+    type: 'Machine learning healthcare app',
     year: '2026',
-    tags: ['React', 'JavaScript', 'CSS'],
+    tags: ['Next.js', 'FastAPI', 'PyTorch'],
     description:
-      'Less busywork. More good work. A project workspace concept for ' +
-      'small teams who want to stay focused.',
+      'An AI-assisted screening tool that classifies skin lesion images ' +
+      'and returns confidence scores and recommendations.',
     detail:
-      'A sample workspace concept built around lightweight boards, clear ' +
-      'ownership, and just enough structure. The visual direction pairs ' +
-      'warm colors with a compact, practical interface.',
-    color: 'peach',
+      'The full-stack application combines a Next.js interface, FastAPI ' +
+      'backend, and EfficientNetV2-S model. It is intended for education ' +
+      'and informational use, not clinical diagnosis.',
+    color: 'skin',
+    url: 'https://skin-cancer-ai-gules.vercel.app',
+    linkLabel: 'Live Demo',
+    repositoryUrl: 'https://github.com/brianlee8974/WCS_SkinCancerDiagnosticsAI',
+    repositoryLabel: 'GitHub',
   },
   {
     id: 'folio',

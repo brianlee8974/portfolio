@@ -1,10 +1,10 @@
 import DeskCanvasPreview from './DeskCanvasPreview.jsx'
-import FormaPreview from './FormaPreview.jsx'
 import FolioPreview from './FolioPreview.jsx'
+import SkinCancerPreview from './SkinCancerPreview.jsx'
 
 const previews = {
   deskcanvas: DeskCanvasPreview,
-  forma: FormaPreview,
+  skincancer: SkinCancerPreview,
   folio: FolioPreview,
 }
 
