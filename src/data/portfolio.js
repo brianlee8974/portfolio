@@ -58,7 +58,7 @@ export const projects = [
         'The game is organized across reusable C# scripts and Unity assets for the game with ' +
         'loop, enemies, settings, and menus.',
       color: 'tower',
-      repositoryUrl: 'https://github.com/brianlee8974/Python-TowerDefence',
+      repositoryUrl: 'https://github.com/brianlee8974/Tower-Defence',
       repositoryLabel: 'GitHub',
   },
 ]
