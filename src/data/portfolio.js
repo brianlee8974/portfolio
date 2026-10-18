@@ -47,16 +47,16 @@ export const projects = [
   },
   {
     id: 'towerdefence',
-    name: 'Python Tower Defence',
+    name: 'Tower Defence',
     type: 'Tower defence game',
       year: '2025',
-      tags: ['Python', 'Pygame'],
+      tags: ['C#', 'Unity'],
       description:
-        'A Python tower defence game built with Pygame, where players place ' +
+        'A C# tower defence game built with Unity, where players place ' +
         'defensive towers to stop waves of enemies.',
     detail:
-        'The game is organized across reusable Python modules for the game ' +
-        'loop, enemies, settings, and menus. Run it locally after installing Pygame.',
+        'The game is organized across reusable C# scripts and Unity assets for the game with ' +
+        'loop, enemies, settings, and menus.',
       color: 'tower',
       repositoryUrl: 'https://github.com/brianlee8974/Python-TowerDefence',
       repositoryLabel: 'GitHub',
