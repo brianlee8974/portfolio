@@ -5,17 +5,17 @@ const skillGroups = [
   {
     icon: Code2,
     title: 'Languages',
-    skills: ['Python', 'Java', 'C#', 'C', 'JavaScript', 'Typescript', 'HTML/CSS', 'R'],
+    skills: ['Python', 'Java', 'C#', 'C', 'JavaScript', 'Typescript', 'HTML/CSS', 'R', 'SQL'],
   },
   {
     icon: Layers,
     title: 'Libraries & Frameworks',
-    skills: ['PyTorch', 'Numpy', 'React', 'Next.js', 'FastAPI', 'Tailwind CSS', 'Pygame',]
+    skills: ['PyTorch', 'Numpy', 'React', 'Next.js', 'Node.js','FastAPI', 'Tailwind CSS', 'Bootstrap',]
   },
   {
     icon: Wrench,
     title: 'Tools',
-    skills: ['Git', 'GitHub', 'VS Code', 'Jupyter Notebook', 'Unix', 'Vite',],
+    skills: ['Git', 'GitHub', 'Docker','MySQL', 'Jupyter Notebook', 'Unix', 'Vite', 'Unity', 'Krita', 'Blender',],
   },
 ]
 
